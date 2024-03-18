@@ -6,6 +6,7 @@ body{
     text-align: center;
 }
 table{
+    border-radius: 10px;
     width: 100%;
     border-collapse: collapse;
     margin: 0;
@@ -15,13 +16,14 @@ table{
     border: 1px solid #000000;
     min-width: 50%;
     max-width: 80%;
+    border-radius: 20px;
 }
 th {
     padding: 8px;
+    background-color: rgb(0, 102, 255);
     border: 1px solid #000000;
-    background-color: grey;
 }
-tr {
+td {
     padding: 8px;
     border: 1px solid #000000;
 }
@@ -34,6 +36,8 @@ text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 footer{
     display: flex;
