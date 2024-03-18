@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 table{
     width: 100%;
@@ -12,6 +13,8 @@ table{
     font-size: 14px;
     font-family: Arial, sans-serif;
     border: 1px solid #000000;
+    min-width: 50%;
+    max-width: 80%;
 }
 th {
     padding: 8px;
@@ -24,4 +27,25 @@ tr {
 }
 header{
 text-align: center;
+}
+.tableau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
