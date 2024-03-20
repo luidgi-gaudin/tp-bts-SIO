@@ -83,20 +83,17 @@ function GetAllCars() {
 	return cars;
 }
 
+const categorie = ["marque", "modele", "annee", "prix", "kilometrage"];
+
+const tableau = document.getElementById("tbody");
+
 function ShowAllCars() {
 	let cars = GetAllCars();
 	cars.forEach(function (car) {
-		let tableau = document.getElementById("tbody");
-		let row = tableau.insertRow();
-		let cell1 = row.insertCell(0);
-		let cell2 = row.insertCell(1);
-		let cell3 = row.insertCell(2);
-		let cell4 = row.insertCell(3);
-		let cell5 = row.insertCell(4);
-		cell1.innerHTML = car.marque;
-		cell2.innerHTML = car.modele;
-		cell3.innerHTML = car.annee;
-		cell4.innerHTML = car.prix;
-		cell5.innerHTML = car.kilometrage;
+		const row = tableau.insertRow();
+		for (let i = 0; i < 5; i++) {
+			let cell = row.insertCell(i);
+			cell.innerHTML = car[categorie[i]];
+		}
 	});
 }
